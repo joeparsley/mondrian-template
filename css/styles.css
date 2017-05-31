@@ -1,0 +1,129 @@
+/* For testing only */
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+.columns {
+  min-height: 100px;
+}
+/* End for testing */
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/*body {
+  margin: 20px;
+  overflow: hidden;
+}*/
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.big-content {
+  height: 95%;
+  width: 60%;
+  background-color: red;
+  position: absolute;
+  top: 2.5%;
+  left: 2.5%;
+}
+
+.small-content-1 {
+  height: 45%;
+  width: 30%;
+  background-color: green;
+  position: absolute;
+  top: 2.5%;
+  right: 2.5%;
+
+}
+
+.small-content-2 {
+  height: 45%;
+  width: 30%;
+  background-color: blue;
+  position: absolute;
+  bottom: 2.5%;
+  right: 2.5%;
+}
+
+@media only screen and (max-width : 1216px) {
+
+  .big-content {
+    height: 60%;
+    width: 95%;
+    background-color: red;
+    top: 2.5%;
+    left: 2.5%;
+    right: 2.5%;
+  }
+
+  .small-content-1 {
+    height: 30%;
+    width: 45%;
+    background-color: green;
+    top: 67.5%;
+    left: 2.5%;
+  }
+
+  .small-content-2 {
+    height: 30%;
+    width: 45%;
+    background-color: blue;
+  }
+
+}
+
+@media only screen and (max-width : 700px) {
+
+.container {
+overflow: scroll;
+
+}
+  .big-content {
+
+    height: 40%;
+    width: 95%;
+    background-color: red;
+    top: 2.5%;
+    left: 2.5%;
+    right: 2.5%;
+
+  }
+
+  .small-content-1 {
+    height: 25%;
+    width: 95%;
+    background-color: green;
+    top: 45%;
+    left: 2.5%;
+  }
+
+  .small-content-2 {
+    height: 25%;
+    width: 95%;
+    background-color: blue;
+
+  }
+}
